@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 let data = require('./db/db.json')
 const fs = require('fs')
-const PORT = 3022;
+const PORT = process.env.PORT|| 3022;
 
 const app = express();
 // express middleware for compiling JSON data and front end assets
